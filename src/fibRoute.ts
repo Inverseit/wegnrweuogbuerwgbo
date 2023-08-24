@@ -6,7 +6,7 @@ import { Request, Response } from 'express';
 export default (req: Request, res: Response): void => {
   const { num } = req.params;
 
-  const parsedNum = parseInt(num); // Parse the input to a number
+  const parsedNum = parseInt(num); 
 
   const fibN = fibonacci(parsedNum);
   let result: string;
